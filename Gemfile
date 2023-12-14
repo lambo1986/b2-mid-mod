@@ -55,6 +55,8 @@ group :development, :test do
   gem "rspec-rails"
   gem "simplecov"
   gem "shoulda-matchers"
+  gem "capybara"
+  gem "orderly"
 end
 
 group :development do
@@ -67,4 +69,3 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
-

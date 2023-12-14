@@ -1,0 +1,7 @@
+<h1><%= @employee.name %></h1>
+<h2><%= @employee.department.name %></h2>
+<% @employee.oldest_tickets_first.each do |ticket| %>
+  <h3>Ticket Description: <%= ticket.description %></h3>
+  <h3>Ticket Created: <%= ticket.created_at %></h3>
+<% end %>
+<h1>Oldest Ticket: <%= @employee.oldest_ticket.description %></h1>
